@@ -1,0 +1,12 @@
+# Tu trabajo y cachés
+investigacion/
+.cache/
+__pycache__/
+*.pyc
+
+# Secretos: el token va en una variable de entorno, nunca en archivos
+.env
+*.token
+
+# Basura de macOS
+.DS_Store

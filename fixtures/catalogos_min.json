@@ -1,0 +1,36 @@
+{
+ "CL_INDICATOR": {
+  "444884": "Índice",
+  "736181": "Valores absolutos",
+  "910392": "Índice general",
+  "737121": "Total",
+  "737173": "Total actividades secundarias",
+  "737151": "22 Generación, transmisión y distribución de energía eléctrica, suministro de agua y de gas por ductos al consumidor final"
+ },
+ "CL_TOPIC": {
+  "45": "Serie desestacionalizada",
+  "600609": "Serie desestacionalizada",
+  "189115": "Índice",
+  "603589": "Índice de volumen físico",
+  "603651": "Actividades secundarias",
+  "603623": "Actividades secundarias"
+ },
+ "CL_UNIT": {
+  "1016": "Porcentaje de la Población Económicamente Activa",
+  "1054": "pesos a precios de 2018",
+  "1051": "Índice base 2018=100",
+  "302": "Variación Porcentual"
+ },
+ "CL_SOURCE": {
+  "21062": "INEGI. Series calculadas por métodos econométricos a partir de la Encuesta Nacional de Ocupación y Empleo",
+  "2187": "INEGI. Series calculadas por métodos econométricos a partir de las series originales del Producto Interno Bruto trimestral",
+  "3371": "INEGI. Índice Nacional de Precios al Consumidor (INPC). 2018",
+  "3251": "INEGI Sistema de Cuentas Nacionales de México. Indicador Global de la Actividad Económica (IGAE) 2018"
+ },
+ "CL_FREQ": {
+  "3": "Anual",
+  "4": "Trimestral",
+  "8": "Mensual",
+  "15": "Quincenal"
+ }
+}

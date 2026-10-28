@@ -1,0 +1,36 @@
+{
+  "910392": {
+    "nombre": "INPC general, índice base 2018=100, mensual",
+    "tema_contiene": "Índice",
+    "unidad_contiene": "base 2018",
+    "frecuencia_contiene": "Mensual",
+    "fuente_contiene": "Índice Nacional de Precios al Consumidor",
+    "anclas": [
+      {"tipo": "nivel", "periodo": "2026/07", "valor": 145.169, "tolerancia": 0.001,
+       "fuente": "INEGI, boletín del INPC de julio de 2026"},
+      {"tipo": "variacion_anual", "periodo": "2026/09", "valor": 3.45, "tolerancia": 0.01,
+       "fuente": "inflación anual de septiembre de 2026 reportada por INEGI (cobertura de prensa)"}
+    ]
+  },
+  "444884": {
+    "nombre": "Tasa de desocupación (% de la PEA), desestacionalizada, mensual",
+    "tema_contiene": "desestacionalizada",
+    "unidad_contiene": "Porcentaje de la Población Económicamente Activa",
+    "frecuencia_contiene": "Mensual",
+    "fuente_contiene": "Encuesta Nacional de Ocupación y Empleo"
+  },
+  "736181": {
+    "nombre": "PIB real trimestral (pesos de 2018), desestacionalizado",
+    "tema_contiene": "desestacionalizada",
+    "unidad_contiene": "pesos a precios de 2018",
+    "frecuencia_contiene": "Trimestral",
+    "fuente_contiene": "Producto Interno Bruto trimestral"
+  },
+  "737121": {
+    "nombre": "IGAE total, índice de volumen físico base 2018=100, serie original (no desestacionalizada)",
+    "tema_contiene": "volumen físico",
+    "unidad_contiene": "base 2018",
+    "frecuencia_contiene": "Mensual",
+    "fuente_contiene": "Indicador Global de la Actividad Económica"
+  }
+}
