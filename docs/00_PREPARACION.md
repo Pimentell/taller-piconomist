@@ -62,15 +62,29 @@ pi necesita un modelo de lenguaje. Recomendamos **Google Gemini** (plan gratuito
 3. Dásela a pi de una de dos formas:
    - **Opción A, variable en la terminal:** `export GEMINI_API_KEY="pega-aquí-tu-clave"` (Windows: `$env:GEMINI_API_KEY="..."`).
    - **Opción B, dentro de pi:** abre `pi`, escribe `/login`, elige Google y pega la clave cuando la pida.
-4. Dentro de pi escribe `/model` y elige un modelo; en el plan gratuito, uno de la familia **Flash**.
+4. Dentro de pi escribe `/model` y elige **`gemini-3.6-flash`** (el probado en el taller). Si no aparece en la lista,
+   actualiza pi (`pi update`). Alternativas: `gemini-3.8-flash`, `gemini-3.5-flash-lite`. **Evita** los modelos «Pro» y
+   «Argon»: son de pago.
 
-Otros proveedores con plan gratuito (si Gemini no te funciona o se agota el cupo):
+Modelos de texto gratuitos según la página de precios de Google (27 de octubre de 2026): `gemini-3.8-flash`,
+`gemini-3.6-flash`, `gemini-3.5-flash-lite`, `gemini-3.1-flash-lite` y `gemini-3-flash-preview`. Google ya no publica
+los límites del plan gratuito por modelo: los ves en AI Studio con tu clave; son por proyecto y se reinician a
+medianoche, hora del Pacífico.
 
-| Proveedor | Dónde se crea la clave | Variable que lee pi |
-|---|---|---|
-| Cerebras | https://cloud.cerebras.ai → API Keys | `CEREBRAS_API_KEY` |
-| Groq | https://console.groq.com/keys | `GROQ_API_KEY` |
-| OpenRouter (modelos `:free`) | https://openrouter.ai/keys | `OPENROUTER_API_KEY` |
+**Si ves «too many requests» (error 429):** es el cupo por minuto del plan gratuito; un agente hace varias llamadas
+seguidas por pregunta y lo alcanza fácil. La carpeta del taller trae `.pi/settings.json` con reintentos automáticos:
+pi espera (5, 10, 20, 40… segundos) y vuelve a intentar hasta 6 veces, así que verás un aviso de reintento en lugar de
+un error. Se carga solo si abres pi con `-a` (como todo lo del repo). Si aun así falla, cambia a `gemini-3.5-flash-lite`
+con la misma clave (`/model`).
+
+Otros proveedores sin tarjeta (si Gemini no te funciona):
+
+| Proveedor | Dónde se crea la clave | Variable que lee pi | Nota |
+|---|---|---|---|
+| Groq | https://console.groq.com/keys | `GROQ_API_KEY` | Para agentes: `openai/gpt-oss-120b`. Pocos tokens por minuto (8 mil en la tabla oficial): un agente avanza lento |
+| OpenRouter (modelos `:free`) | https://openrouter.ai/keys | `OPENROUTER_API_KEY` | Solo 50 solicitudes al día sin créditos: no alcanza para el taller |
+
+Cerebras no está en la lista porque pide un método de pago para activar la cuenta.
 
 Crea **tu propia** cuenta y clave; no compartas claves ni las pegues en archivos. Los planes gratuitos tienen límites de
 uso que cambian seguido y pueden usar tus conversaciones para mejorar el producto: **no subas datos personales ni

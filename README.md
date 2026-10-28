@@ -24,12 +24,14 @@ AGENTS.md                      personalidad y reglas del agente (pi lo lee solo)
   investigacion-economica/     del planteamiento al informe reproducible
   tasas-crecimiento/           variaciones anuales y CAGR (con script de Python)
 .pi/prompts/                   comandos propios: /serie <ID>, /investigar <pregunta>
+.pi/settings.json              reintentos automáticos cuando el plan gratuito del modelo da «too many requests»
 herramientas/inegi.py          cliente de INEGI (solo biblioteca estándar)
 herramientas/doctor.py         revisa que tu equipo esté listo
 herramientas/tests/            pruebas (corren sin internet)
 datos/series_validadas.json    series ya identificadas y contrastadas, con cifras ancla
 ejemplos/agente_minimo.py      un agente en ~80 líneas de Python
 ejercicios/                    EJ1 (sesión 1), EJ2–EJ3 (sesión 2), EJ4–EJ5 (extra)
+presentacion/                  diapositivas de las dos sesiones (ábrelas en el navegador; N muestra las notas)
 plantilla-skill/               punto de partida para tus skills
 fixtures/                      respuestas reales guardadas (modo sin internet)
 investigacion/                 tu trabajo (se crea al usarlo; no se sube a git)
